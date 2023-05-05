@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Container, CountryList, Heading, Loader, Section } from 'components';
+import { Container, CountryList, Section } from 'components';
 import { getCountries } from 'service/country-service';
 
 export const Home = () => {
@@ -10,7 +10,6 @@ export const Home = () => {
       setCountries(data);
     });
   }, []);
-  console.log(countries);
   return (
     <Section>
       <Container>
