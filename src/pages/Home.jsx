@@ -1,17 +1,24 @@
 import { useEffect, useState } from 'react';
-import { Container, CountryList, Section } from 'components';
+import { Container, CountryList, Loader, Section } from 'components';
 import { getCountries } from 'service/country-service';
 
 export const Home = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
-    getCountries().then(data => {
-      setCountries(data);
-    });
+    setIsLoading(true);
+    getCountries()
+      .then(data => {
+        setCountries(data);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   }, []);
   return (
     <Section>
+      {isLoading && <Loader />}
       <Container>
         <CountryList countries={countries} />
       </Container>

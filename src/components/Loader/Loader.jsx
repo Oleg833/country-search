@@ -6,13 +6,18 @@ export const Loader = () => {
     <>
       <Grid
         color="#00BFFF"
-        height={80}
-        width={80}
+        height={480}
+        width={480}
         wrapperStyle={{
           position: 'absolute',
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
+          opacity: '1',
+          backgroundColor: 'rgba(0, 0, 0, 0.6)',
+          borderRadius: '20px',
+          border: '4px solid bisque',
+          zIndex: '2',
         }}
       />
     </>

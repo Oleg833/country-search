@@ -7,12 +7,11 @@ export const CountryWrapper = styled.div`
   box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
   position: relative;
 
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
 `;
 
 export const CountryDescription = styled.div`
-  padding: 100px;
+  padding: 20px;
 
   display: flex;
   flex-direction: column;
@@ -29,9 +28,9 @@ export const Flag = styled.div`
 
   z-index: 10;
   box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
-  border: 2px solid bisque;
+  border: 2px solid burlywood;
 
-  position: absolute;
+  /* position: absolute; */
   left: -10%;
   top: -13%;
   display: flex;
