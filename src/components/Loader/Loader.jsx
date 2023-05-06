@@ -6,8 +6,8 @@ export const Loader = () => {
     <>
       <Grid
         color="#00BFFF"
-        height={480}
-        width={480}
+        height={380}
+        width={380}
         wrapperStyle={{
           position: 'absolute',
           top: '50%',
