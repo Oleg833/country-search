@@ -88,7 +88,7 @@ export const GridItem = styled.li`
   justify-content: center;
   background-color: ${props => props.color};
 
-  border: 4px solid ${({ color }) => color ?? '#fff'};
+  border: 4px solid ${({ color }) => color ?? 'bisque'};
   border-radius: ${props => props.theme.spacing.step * 4}px;
   transition: transform 0.5s ${props => props.theme.animations.cubicBezier};
 

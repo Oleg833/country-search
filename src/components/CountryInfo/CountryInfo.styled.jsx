@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const CountryWrapper = styled.div`
-  background: #fff;
+  background: blanchedalmond;
   max-width: 600px;
   border-radius: 10px;
   box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
@@ -29,7 +29,7 @@ export const Flag = styled.div`
 
   z-index: 10;
   box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
-  border: 4px solid #fff;
+  border: 2px solid bisque;
 
   position: absolute;
   left: -10%;
