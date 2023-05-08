@@ -17,16 +17,13 @@ export const Country = () => {
       .then(data => {
         setCountry(data);
       })
+      .catch(err => {
+        alert(err.massage);
+      })
       .finally(() => {
         setIsLoading(false);
       });
   }, [countryId]);
-  if (!country)
-    return (
-      <Section>
-        <Loader />
-      </Section>
-    );
 
   return (
     <Section>

@@ -12,7 +12,6 @@ import { fetchByRegion } from 'service/country-service';
 export const CountrySearch = () => {
   const [countries, setCountries] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  // const [error, setError] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -23,9 +22,9 @@ export const CountrySearch = () => {
       .then(data => {
         setCountries(data);
       })
-      // .catch(err => {
-      //   setError(err.message);
-      // })
+      .catch(err => {
+        alert(err.massage);
+      })
       .finally(() => {
         setIsLoading(false);
       });

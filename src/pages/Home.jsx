@@ -12,6 +12,9 @@ export const Home = () => {
       .then(data => {
         setCountries(data);
       })
+      .catch(err => {
+        alert(err.massage);
+      })
       .finally(() => {
         setIsLoading(false);
       });
