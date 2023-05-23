@@ -18,7 +18,7 @@ export const Country = () => {
         setCountry(data);
       })
       .catch(err => {
-        alert(err.massage);
+        alert(err.massage ?? `Server Off`);
       })
       .finally(() => {
         setIsLoading(false);

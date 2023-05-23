@@ -23,7 +23,7 @@ export const CountrySearch = () => {
         setCountries(data);
       })
       .catch(err => {
-        alert(err.massage);
+        alert(err.massage ?? `Server Off`);
       })
       .finally(() => {
         setIsLoading(false);
